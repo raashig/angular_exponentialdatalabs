@@ -1,0 +1,93 @@
+.con {
+  padding: 20px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.quantity {
+  text-align: center;
+  width: 30px;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  
+  .con {
+    padding: 0px;
+  }
+  
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+ 
+
+  td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 50%;
+  }
+ 
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: auto;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  td:nth-of-type(1):before {
+    content: "";
+  }
+  td:nth-of-type(2):before {
+    content: "";
+  }
+  td:nth-of-type(3):before {
+    content: "Product";
+  }
+  td:nth-of-type(4):before {
+    content: "Price";
+  }
+  td:nth-of-type(5):before {
+    content: "Quantity";
+  }
+  td:nth-of-type(6):before {
+    content: "Total";
+  }
+  .txt-right {
+    text-align: right;
+  }
+}
