@@ -91,3 +91,7 @@ th {
     text-align: right;
   }
 }
+.prod-img {
+  width: 70px;
+  height: auto;
+}
